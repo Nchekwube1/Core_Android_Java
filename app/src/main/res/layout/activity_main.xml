@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingHorizontal="50dp"
+    android:id="@+id/parentElement"
     tools:context=".MainActivity">
    <EditText
        android:layout_width="match_parent"
@@ -14,6 +15,7 @@
        android:paddingHorizontal="5dp"
        android:id="@+id/nameText"
        android:layout_centerInParent="true"
+       android:inputType="text"
 />
     <Button
         android:layout_width="match_parent"
@@ -22,9 +24,9 @@
         android:layout_marginTop="30dp"
         android:id="@+id/submitBtn"
         android:layout_below="@+id/nameText"
-        android:shadowRadius="@integer/material_motion_duration_long_1"
         android:text="Submit"
-        android:textSize="25dp"
+        android:textSize="25sp"
+        android:backgroundTint="@color/teal_200"
 
         />
     <TextView
@@ -34,9 +36,20 @@
         android:layout_below="@+id/submitBtn"
         android:layout_marginTop="50dp"
         android:text="Hi"
-        android:textSize="30dp"
+        android:textSize="30sp"
         android:id="@+id/textView"
 
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_error"
+      android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="#000"
+        android:id="@+id/fab"
         />
 
 </RelativeLayout>
