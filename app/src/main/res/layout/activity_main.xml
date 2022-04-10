@@ -4,20 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingHorizontal="50dp"
     tools:context=".MainActivity">
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="90dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Java na beans"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:textSize="26sp"
-            android:textColor="@color/purple_700"
-            />
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:hint="name"
+       android:paddingVertical="24dp"
+       android:paddingHorizontal="5dp"
+       android:id="@+id/nameText"
+       android:layout_centerInParent="true"
+/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/submitBtn"
+        android:layout_below="@+id/nameText"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:text="Submit"
+        android:textSize="25dp"
 
-    </RelativeLayout>
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/submitBtn"
+        android:layout_marginTop="50dp"
+        android:text="@string/javaStr"
+        android:textSize="30dp"
 
+        />
 </RelativeLayout>
