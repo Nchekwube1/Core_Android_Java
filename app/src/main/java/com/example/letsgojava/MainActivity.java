@@ -57,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Toast.makeText(MainActivity.this, "Retrying....", Toast.LENGTH_LONG).show();
                     }
                 })
+                .setActionTextColor(getResources().getColor(R.color.design_default_color_error))
+                .setTextColor(getResources().getColor(R.color.white))
+                .setBackgroundTint(getResources().getColor(R.color.black))
                 .show();
     }
 

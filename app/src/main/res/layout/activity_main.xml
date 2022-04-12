@@ -7,49 +7,55 @@
     android:paddingHorizontal="50dp"
     android:id="@+id/parentElement"
     tools:context=".MainActivity">
-   <EditText
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:hint="name"
-       android:paddingVertical="24dp"
-       android:paddingHorizontal="5dp"
-       android:id="@+id/nameText"
-       android:layout_centerInParent="true"
-       android:inputType="text"
-/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="30dp"
-        android:id="@+id/submitBtn"
-        android:layout_below="@+id/nameText"
-        android:text="Submit"
-        android:textSize="25sp"
-        android:backgroundTint="@color/teal_200"
+<!--   <EditText-->
+<!--       android:layout_width="match_parent"-->
+<!--       android:layout_height="wrap_content"-->
+<!--       android:hint="name"-->
+<!--       android:paddingVertical="24dp"-->
+<!--       android:paddingHorizontal="5dp"-->
+<!--       android:id="@+id/nameText"-->
+<!--       android:layout_centerInParent="true"-->
+<!--       android:inputType="text"-->
+<!--/>-->
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:id="@+id/submitBtn"-->
+<!--        android:layout_below="@+id/nameText"-->
+<!--        android:text="Submit"-->
+<!--        android:textSize="25sp"-->
+<!--        android:backgroundTint="@color/teal_200"-->
+<!--        app:cornerRadius="10dp"-->
+<!--        android:elevation="5dp"-->
 
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_below="@+id/submitBtn"
-        android:layout_marginTop="50dp"
-        android:text="Hi"
-        android:textSize="30sp"
-        android:id="@+id/textView"
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_below="@+id/submitBtn"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:text="Hi"-->
+<!--        android:textSize="30sp"-->
+<!--        android:id="@+id/textView"-->
 
-        />
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/design_default_color_error"
-      android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginBottom="20dp"
-        android:src="@drawable/ic_add"
-        app:backgroundTint="#000"
-        android:id="@+id/fab"
-        />
-
+<!--        />-->
+<!--    <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/design_default_color_error"-->
+<!--      android:layout_alignParentBottom="true"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:src="@drawable/ic_add"-->
+<!--        app:backgroundTint="#000"-->
+<!--        android:id="@+id/fab"-->
+<!--        />-->
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    />
 </RelativeLayout>
